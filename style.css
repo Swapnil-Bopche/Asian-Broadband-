@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "Montserrat", sans-serif;
+     font-optical-sizing: auto;
+}
+
+:root{
+    --blue-background-color:#2E3192;
+    --plans-dropdown-background-color:#1779BA;
+    --dropdown-background-color:#F3F8FF;
+    --menu-items-text-color: #1A1B30;
+    --body-background-color:#FEFEFE;
+    --body-text-color:#626374;
+    --body-dark-text-color:#232438;
+    --get-connection-background-color:#ED008C;
+    --button-text-color:#FFFFFF;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.fs-6{
+   font-size: 1.1rem;
+}
+.fs-7{
+    font-size: 1rem;
+    font-weight: 500;
+    
+}
+li{
+        list-style: none;
+}
+
+.dropdown_list ul,
+.account_dropdown_list ul
+{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: var(--blue-background-color);
+    padding-left: 9.5rem;
+    padding-right: 12.5rem;
+}
+
+.header-contacts span, .header-buttons{
+    letter-spacing: 0.02rem;
+}
+.dropdown_btn{
+   font-size: 0.845rem;
+   margin-left: 0.2rem;
+}
+.subdropdown_btn{
+    font-size: 0.845rem;
+    color: var(--plans-dropdown-background-color);
+}
+
+.manage-account{
+    position: relative;
+}
+.manage-account .account_dropdown_list{
+    position: absolute;
+    background-color: var(--dropdown-background-color);
+    width: 12.375rem;
+    top: 125%;
+    left: -9%;
+    border-radius: 0.6rem;
+     padding: 0.4rem 0  0.4rem 0.7rem ;
+     opacity: 0;
+     pointer-events: none;
+     z-index: 99;
+}
+.manage-account li:hover .account_dropdown_list{
+     opacity: 1;
+     pointer-events:visible;
+}
+
+.manage-account .account_dropdown_list li{
+    padding-block: 0.15rem;
+}
+
+nav{
+    padding-left: 9.5rem;
+    padding-right: 10.7rem;
+    height: 6.5rem;
+}
+
+.logo{
+    width: 12px;
+    z-index: 99;
+}
+
+.hamberger-menu-icon,
+.mobile-items
+{
+    display: none;
+}
+
+.nav_items ul{
+    display: flex;
+    gap: 0.75rem;
+}
+
+.nav_items li a{
+    font-size: 0.96rem;
+    font-weight: 500;
+}
+
+.nav_items{
+    position: relative;
+}
+
+.nav_items .dropdown_list{
+    position: absolute;
+    background-color: var(--dropdown-background-color);
+    width: 12.375rem;
+    border-radius: 0.6rem;
+    top: 55%;
+    /* padding: 0.5rem 0.8rem 0.5rem 0.8rem; */
+     opacity: 0;
+    pointer-events: none; 
+    padding-block: 0;
+    
+  
+}
+.nav_items li:hover .dropdown_list{
+     opacity: 1;
+    pointer-events: visible;
+}
+
+.nav_items .dropdown_list ul{
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.dropdown_list li a{
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+    padding: 0.25rem 0.55rem;
+   
+}
+
+.background_blue:hover{
+    background-color: var(--plans-dropdown-background-color);
+}
+
+/* fixed HeaderNav handled by js */
+.top-wrapper.fixed-topbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+.body-offset {
+  padding-top: calc(3.4rem + 6.5rem);
+}
+
+.banner-section{
+     padding-left: 9.5rem;
+    padding-right: 10.7rem;
+}
+.banner-content{
+    max-width: 100%;
+}
+
+.banner_area{
+    height: 71vh;
+    width: 100%;
+}
+
+.banner_area{
+flex: 0 0 66%;
+}
+.banner_area img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form_area{
+  flex: 0 0 32%; 
+ border: 0.25rem solid var(--blue-background-color); 
+  
+}
+
+
+
+
+
+
+
+
+/* media query */
+@media screen and (max-width:1200px){
+    header{
+        padding-left: 1rem;
+    padding-right: 2.4rem;
+    }
+
+    .header-buttons .payment a,
+    .header-buttons .manage-account li a{
+        font-size: 0.91rem;
+    }
+
+    nav{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    }
+    .banner-section{
+        padding-left: 1rem;
+    padding-right: 1rem;
+    }
+}
+
+@media screen and (max-width:1140px){
+ 
+    header .header-contacts .watsapp-number{
+        display: block;
+    }
+
+
+}
+
+@media screen and (max-width:1024px){
+
+
+    header{
+        height: 4.3rem;
+        
+    }
+
+  .header-container{
+    display: flex;
+    flex-direction: column;
+    transition:transform .5s;
+  }
+  .header-container.drag{
+    transform: translateX(-250px);
+  }
+
+   header .header-contacts span{
+    font-size: 0.92rem;
+    font-weight: 500;
+   }
+
+  header .header-contacts .watsapp-number{
+        display: inline-block;
+    }
+
+    .logo{
+       transition:transform .5s;
+       }
+    .logo.drag{
+         transform: translateX(-250px);
+    }
+
+    .nav_items{
+        display: none;
+    }
+
+    .hamberger-menu-icon{
+        display: block;
+        cursor: pointer;
+        letter-spacing: 0.01rem;
+        transition:transform .5s;
+    }
+    .MENU{
+        font-size: 0.99rem;
+        font-weight: 500;
+        color: var(--blue-background-color);
+    }
+    .ri-menu-2-fill{
+        color: #232438;
+    }
+
+    .nav-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+
+    /* mobile nav items */
+    .mobile-items{
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 240px;
+        background-color: var(--blue-background-color);
+        height: 100vh;
+         transform: translateX(100%);
+        transition:transform .5s;
+    }
+    .mobile-items.openPanel{
+        transform: translateX(0);
+    }
+
+    .hamberger-menu-icon.drag{
+        transform: translateX(-250px);
+    }
+
+    .mobile-items ul{
+        margin: 0;
+        padding:1.5rem 1.4rem;
+    }
+
+    .mobile-items li{
+     padding-block: 0.5rem;
+    }
+     .mobile-items li a{
+        font-weight: 500;
+     }
+
+     .dropdown_content ul{
+        margin: 0;
+        padding: 0;
+     }
+    .mobile_dropdown_list{
+      height: 0;
+      overflow: hidden;
+      transition: .5s height;
+    }
+    .mobile_dropdown_list li{
+        padding: 0.8rem 0.95rem 0 0.95rem;
+        line-height: 1rem;
+    }
+    
+
+
+    /* banner */
+
+    .banner-section .banner-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner_area{
+    width: 100%;
+    height: auto;
+    }
+    .form_area{
+        width: 100%;
+        height: auto;
+    }
+    
+
+
+}

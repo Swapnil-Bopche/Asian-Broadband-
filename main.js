@@ -9,6 +9,18 @@ const topWrapper = document.querySelector('.top-wrapper');
 const banner = document.querySelector('.banner-section')
 const body = document.body
 
+// .nav_items li a{
+//     
+// }
+// .nav_items ul{
+//     display: flex;
+//     gap: 0.75rem;
+// }
+
+
+// padding: 0.35rem 0.6rem;
+
+
 
 
 Hamberer_icon.addEventListener('click', () => {

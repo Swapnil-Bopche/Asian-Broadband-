@@ -47,7 +47,7 @@ li{
 header{
     background-color: var(--blue-background-color);
     padding-left: 9.5rem;
-    padding-right: 12.5rem;
+    padding-right: 11.4rem;
 }
 
 .header-contacts span, .header-buttons{
@@ -88,7 +88,7 @@ header{
 
 nav{
     padding-left: 9.5rem;
-    padding-right: 10.7rem;
+    padding-right: 9.6rem;
     height: 6.5rem;
 }
 
@@ -103,55 +103,86 @@ nav{
     display: none;
 }
 
-.nav_items ul{
+.nav_items ul {
     display: flex;
+    align-items: center;
     gap: 0.75rem;
 }
+.nav_items ul li{
+    position: relative;
+      
+}
 
-.nav_items li a{
+.nav_items ul li a{
     font-size: 0.96rem;
     font-weight: 500;
 }
 
-.nav_items{
-    position: relative;
+.dropdown_list{
+ position: absolute;
+ top: 110%;
+ border-radius: 0.7rem;
+ width: 12.375rem;
+ left: -17%;
+ background-color: var(--dropdown-background-color);
+ opacity: 0;
+ pointer-events: none;
+ transition:  0.5s;
 }
 
-.nav_items .dropdown_list{
-    position: absolute;
-    background-color: var(--dropdown-background-color);
-    width: 12.375rem;
-    border-radius: 0.6rem;
-    top: 55%;
-    /* padding: 0.5rem 0.8rem 0.5rem 0.8rem; */
-     opacity: 0;
-    pointer-events: none; 
-    padding-block: 0;
-    
-  
-}
-.nav_items li:hover .dropdown_list{
+.nav_items .nav-link:hover .dropdown_list{
      opacity: 1;
     pointer-events: visible;
+    cursor: pointer;
 }
 
-.nav_items .dropdown_list ul{
+.dropdown_list ul{
     display: flex;
     flex-direction: column;
-  
-}
+    gap: 0;
+    padding: 0;margin: 0;
 
-.dropdown_list li a{
-    display: flex;
-    align-items: center;
-   justify-content: space-between;
-    padding: 0.25rem 0.55rem;
    
 }
 
+.dropdown_list ul li {
+      position: relative;
+      width: 12.375rem;
+      
+}
+.dropdown_list ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.48rem 0.6rem;
+   
+}
 .background_blue:hover{
     background-color: var(--plans-dropdown-background-color);
 }
+
+.sub-dropdownlist{
+    position: absolute;
+    left: 100%;
+    top: 0;
+    border-radius: 0.7rem;
+    width: 12.375rem;
+    background-color: var(--dropdown-background-color);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+.dropdown_link:hover .sub-dropdownlist{
+    opacity: 1;
+    pointer-events: visible;
+    cursor: pointer;
+}
+
+.sub_dropdown_link{
+    line-height: 1rem;
+}
+
+
 
 /* fixed HeaderNav handled by js */
 .top-wrapper.fixed-topbar{
@@ -169,7 +200,7 @@ nav{
 
 .banner-section{
      padding-left: 9.5rem;
-    padding-right: 10.7rem;
+    padding-right: 9.6rem;
 }
 .banner-content{
     max-width: 100%;
@@ -194,7 +225,9 @@ flex: 0 0 66%;
  border: 0.25rem solid var(--blue-background-color); 
   
 }
-
+.form_content h5{
+    color:var(--blue-background-color);
+}
 
 
 

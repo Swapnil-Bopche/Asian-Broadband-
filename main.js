@@ -62,3 +62,58 @@ window.addEventListener('scroll', () => {
         body.style.paddingTop = '0px';
     }
 })
+
+
+
+// About Us
+
+// Why Asianet Broadband
+
+// Business
+
+// Enterprise Solutions
+// Internet Leased Line – Lite
+// Web Hosting
+
+// Others
+
+// Parental Control
+// Blog
+// Cyber Swachhta Awareness
+// Sanchar Saathi Mobile app
+
+// Broadband Plans
+
+// Unlimited Offers
+// Offers
+// Other Services
+// Digital TV
+
+// Contact
+
+// Get Connection
+// Customer Care
+// Customer Feedback Form
+// Go Green
+// Nodal Officers
+// Appellate
+// Modemamc
+
+// Links
+
+// Pay Online
+// Get Connection
+// Customer Support
+// Downloads
+// Partner With Us
+// What is My IP Address
+// Strong Password Generator
+// Internet Data Usage Calculator
+
+// Toll free Number
+
+// 1800 425 4725
+// Monday – Saturday
+// 9.30 – 17.30 hrs
+
+// Connect with us

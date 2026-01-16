@@ -9,16 +9,6 @@ const topWrapper = document.querySelector('.top-wrapper');
 const banner = document.querySelector('.banner-section')
 const body = document.body
 
-// .nav_items li a{
-//     
-// }
-// .nav_items ul{
-//     display: flex;
-//     gap: 0.75rem;
-// }
-
-
-// padding: 0.35rem 0.6rem;
 
 
 
@@ -46,6 +36,8 @@ Dropdown_btn.forEach((btn) => {
         const menu = dropdown.querySelector('.mobile_dropdown_list');
         console.log(menu, 'menu drp list');
         const isOpen = dropdown.classList.contains('open');
+
+
         console.log(isOpen);
 
         toggleDropdown(dropdown, menu, !isOpen)
@@ -62,9 +54,11 @@ const triggerPoint = banner.offsetTop;
 window.addEventListener('scroll', () => {
     if (window.scrollY >= triggerPoint) {
         topWrapper.classList.add('fixed-topbar')
-        body.classList.add('body-offset')
+        const height_ = topWrapper.offsetHeight;
+        body.style.paddingTop = `${height_}px`;
+        // body.classList.add('body-offset')
     } else {
         topWrapper.classList.remove('fixed-topbar')
-        body.classList.remove('body-offset')
+        body.style.paddingTop = '0px';
     }
 })

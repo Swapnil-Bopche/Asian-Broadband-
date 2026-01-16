@@ -53,6 +53,10 @@ header{
     padding-right: 11.4rem;
 }
 
+.header-container{
+    height: 3.4rem;
+}
+
 .header-contacts span, .header-buttons{
     letter-spacing: 0.02rem;
 }
@@ -296,6 +300,215 @@ flex: 0 0 66%;
    
 }
 
+/* Helpline section */
+.HelplineSection{
+    padding-left: 9.5rem;
+    padding-right: 9.6rem;
+    background-color:  #f5f5f5; 
+}
+.helpline_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 13px;
+    row-gap: 0;
+    justify-content: flex-start;
+}
+ .rectangle_box{
+    background-color: var(--blue-background-color);
+    color: #FFFFFF;
+    font-size: 1.2485rem;
+    font-weight: 500;
+    padding: 0 10px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+   
+}
+
+/* BroadbandInYourCity */
+.BroadbandInYourCity,
+.entertainmentAndFullpower,
+.bestBroadbandKerala,
+.FAQ
+{
+     padding-left: 9.5rem;
+    padding-right: 9.6rem;
+}
+.broadbandCityWrapper{
+    height: 215.5px;
+    background-color: var(--blue-background-color);
+    color: #fff;
+    padding: 3rem 2rem;
+    border-radius: 29px;
+}
+.broadbandCityWrapper span,
+.Faq_wrapper span{
+    font-size: 1.94rem;
+    color: var(--blue-background-color);
+}
+.search_wrapper{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-top: 18px;
+}
+
+.search_wrapper select{
+    flex: 1;
+    background-color: var(--blue-background-color);
+    border: none;
+    outline: none;
+    border-radius: 0;
+    color: #fff;
+    font-weight: 500;
+    border-bottom: 1px solid #fff;
+    height: 40.1px;
+}
+
+.search_wrapper button{
+    height: 40.1px;
+    width: 253.8px;
+    color: #fff;
+    background-color: var(--get-connection-background-color);
+    border: 0;
+     text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* entertainmentAndFullpower */
+.entertainmentAndFullpower .subheading{
+ font-size: 1.92rem;
+  color: var(--blue-background-color);
+}
+
+.Vertical_Banaer{
+     width: 22.32rem;
+     height: 45.42rem;
+     border-radius: 29px;
+     border: 2px solid var(--blue-background-color);
+     overflow: hidden;
+     
+}
+
+.Vertical_Banaer img{
+    width: 100%;
+    height: 31.36rem;
+    
+    border-bottom: 2px solid var(--blue-background-color);
+}
+
+.Vertical_Banaer .plan_details{
+     height: 9.06rem;
+     /* width: 90%;
+     margin-left: 5%;
+     background-color: red; */
+     border-bottom: 2px solid var(--blue-background-color);
+}
+
+.plan_details ul{
+    padding: 1.2rem 1.5rem;
+}
+
+.plan_details li{
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin: 0.1rem;
+}
+
+.plan_package{
+    height: 5rem;
+}
+.plan_package .price{
+    font-weight: 500;
+}
+.plan_package button{
+    padding: 0.6rem;
+    color: #fff;
+    background-color: var(--blue-background-color);
+    border: 0;
+    outline: 0;
+    font-weight: 500;
+}
+
+ .termConditonBtn{
+    padding: 0.7rem 1.2rem;
+    font-size: 1.2rem;
+     color: #fff;
+    background-color: var(--blue-background-color);
+    border: 0;
+    outline: 0;
+    font-weight: 500;
+    /* margin: 0 auto;  */
+    /* it only works when element is pure block and buttton is inline-block so to use it we need to make display:block */
+}
+
+
+/* bestBroadbandKerala */
+ .heading{
+    color: var(--blue-background-color);
+    font-size: 2.2rem;
+}
+
+.bestBroadbandKerala p,
+.faq_answer p{
+    font-size: 1.16rem;
+    font-weight: 500;
+    color: var(--body-text-color);
+}
+.bestBroadbandKerala button{
+    height: 45.11px;
+    width: 153.29px;
+    background-color: var(--blue-background-color);
+    color: #fff;
+    font-weight: 500;
+    border: 0;
+   
+}
+
+/* FAQ section */
+.faq_question{
+    border: 0.1px solid rgb(204, 198, 198);
+    border-bottom: none;
+     border-top: 0.1px solid rgb(204, 198, 198);
+    padding: 1rem;
+    height: 60.8px;
+ 
+}
+/* .faq_question:first-child{
+    border-top: 0.1px solid rgb(204, 198, 198);
+} */
+
+.faq_question p{
+    font-size: 1.2485rem;
+    font-weight: 500;
+    color: var(--blue-background-color);
+    margin: 0; /* removed default margin thats why p tag isnt comming center */
+}
+.faq_question .toggle_btn{
+    font-size: 0.8rem;
+    font-weight: 900;
+    color: var(--blue-background-color);
+    cursor: pointer;
+}
+
+.faq_answer{
+    padding: 1rem;
+    border: 0.1px solid rgb(204, 198, 198);
+     /* height: 121.11px; */
+     /* display: none; */
+    /* height: 0;
+      overflow: hidden;
+      transition: .5s height;
+      visibility: hidden; */
+}
+.long_answer {
+    height: 151.35px;
+}
+.short_answer{
+     height: 60.8px;
+}
+
 
 /* footer */
 footer{
@@ -337,7 +550,7 @@ padding-right: 9.6rem;
 
 .copyright_content span,
 .terms_conditions span{
-    font-size: 1.125rem;
+    font-size: 1.1rem;
 }
 
 .terms_conditions small{
@@ -347,7 +560,7 @@ padding-right: 9.6rem;
 /* media query */
 @media screen and (max-width:1200px){
     header{
-        padding-left: 1rem;
+    padding-left: 1rem;
     padding-right: 2.4rem;
     }
 
@@ -356,42 +569,45 @@ padding-right: 9.6rem;
         font-size: 0.91rem;
     }
 
-    nav{
-    padding-left: 1rem;
-    padding-right: 1rem;
-    }
-    .banner-section{
+    nav,
+    .banner-section,
+    .bestBroadbandKerala,
+    .entertainmentAndFullpower,
+    .BroadbandInYourCity,
+    .FAQ,
+     footer,
+    .copyright
+    {
     padding-left: 1rem;
     padding-right: 1rem;
     }
 
-    footer,
-    .copyright{
-    padding-left: 1rem;
-    padding-right: 1rem;
+    nav{
+         padding-bottom: 0.5rem;
     }
+
+
+    .helpline_wrapper{
+        justify-content: center;
+    }
+
+
 }
 
 @media screen and (max-width:1140px){
- 
-    header .header-contacts .watsapp-number{
-        display: block;
-    }
-
-
+ header .header-contacts .watsapp-number{
+        display: block;}
 }
-
 @media screen and (max-width:1024px){
-
-
-    header{
+header{
         height: 4.3rem;
-        
-    }
-
-  .header-container{
+}
+.header-container{
     display: flex;
     flex-direction: column;
+   margin: 0 auto;
+   align-items: center;
+   text-align: center;
     transition:transform .5s;
   }
   .header-container.drag{
@@ -412,6 +628,11 @@ padding-right: 9.6rem;
        }
     .logo.drag{
          transform: translateX(-250px);
+    }
+
+    .logo img{
+        width: 9.37rem;
+        height: 5.79rem;
     }
 
     .nav_items{
@@ -502,7 +723,188 @@ padding-right: 9.6rem;
         width: 100%;
         height: auto;
     }
+
+    /* payyourBill section */
+    .HelplineSection{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .helpline_wrapper{
+        flex-direction: column;
+
+    }
+    .rectangle_box{
+    width: 100%;
+    justify-content: center;
+
+    }
+
+
+    .Vertical_Banaer{
+     width: 28.88rem;
+    }
+    .Vertical_Banaer img{
+     width: 100%;
+    }
+
+    /* BroadbandInYourCity */
+    .broadbandCityWrapper{
+        height: 280.5px;
+        padding: 2rem;
+
+    }
+    .search_wrapper{
+    flex-direction: column;
+      gap: 32px;
+      margin-top: 22px;
+     
+    }
+
+    .search_wrapper select,
+    .search_wrapper .search-btn{
+        width: 100%;
+    }
+
     
 
+
+    /* footer and copyright */
+    .footer_container .row > [class*="col"],
+    .copyright_container .row > [class*="col"]
+    {
+         flex: 0 0 100%;
+        background-color: yellow;
+        width:100%;
+        text-align: center;
+      
+    }
+
+    .footer_container .row,
+    .copyright_container .row,
+    .payYourBillsection .row {
+    margin-left: 0;
+    margin-right: 0;
+    }
+    
+   .footer_container .d-flex{
+    justify-content: center;
+   }
+
+   
+  
+}
+
+@media screen and (max-width:772px){
+    header{
+        height: 5.35rem;
+    }
+}
+
+
+
+@media screen and (max-width:784px){
+ .broadbandCityWrapper{
+        height: 323.9px;
+        }
+
+        .nav-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav{
+        height: 4rem;
+       padding-bottom: 0.5rem;
+        }
+
+    .logo img{
+        width:5.812rem;
+        height:3.590rem;
+    } 
+
+}
+
+
+
+@media screen and (max-width:639px){
+ .broadbandCityWrapper{
+        height: 263.7px;
+}
+
+.broadbandCityWrapper span{
+    font-size: 19px;
+}
+
+.Vertical_Banaer{
+     width: 36.69rem;
+    height: 66.11rem;
+}
+.Vertical_Banaer img{
+    height: 51.55rem;
+}
+.plan_package{
+    height: 5.5rem;
+}
+}
+
+@media screen and (max-width:517px){
+ .broadbandCityWrapper{
+        height: 290.3px;
+}
+
+.Vertical_Banaer{
+     width: 29.07rem;
+    height: 55.4rem;
+}
+
+.Vertical_Banaer img{
+     width: 100%;
+    height: 40.84rem;
+
+}
+}
+
+@media screen and (max-width:416px) {
+      header{
+        height: 6.47rem;
+        
+    }
+}
+
+@media screen and (max-width:309px) {
+      header{
+        height: 8rem;
+        
+    }
+}
+
+
+@media screen and (max-width:370px){
+
+     nav{
+        height: 2.96rem;
+       padding-bottom: 0.5rem;
+        }
+
+    .logo img{
+        width:4rem;
+        height:2.47rem;
+    } 
+
+ .broadbandCityWrapper{
+        height: 316.9px;
+}
+
+.Vertical_Banaer{
+     width: 19.82rem;
+    height: 42.4rem;
+}
+
+.Vertical_Banaer img{
+     width: 100%;
+    height: 27.84rem;
+
+}
 
 }

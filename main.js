@@ -69,7 +69,7 @@ const Faq_dropdown_container = document.querySelectorAll('.faq-item')
 questionBtn.forEach((btn) => {
     btn.addEventListener('click', () => {
         const item_ = btn.parentElement;
-        console.log(item_);
+        
 
         Faq_dropdown_container.forEach((dropdown) => {
             if (dropdown !== item_) dropdown.classList.remove('open')

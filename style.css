@@ -227,6 +227,18 @@ flex: 0 0 66%;
     object-fit: cover;
 }
 
+/* advertisementPoster */
+.advertisementPoster {
+    position: fixed;
+    right: 0;
+    top: 40%;
+}
+.advertisementPoster img{
+    width: 2.5rem;
+    height: 12.5rem;
+    border-radius: 9px;
+}
+
 .form_area{
   flex: 0 0 32%; 
  border: 0.25rem solid var(--blue-background-color); 
@@ -309,7 +321,7 @@ flex: 0 0 66%;
 .helpline_wrapper{
     display: flex;
     flex-wrap: wrap;
-    column-gap: 13px;
+    column-gap: 11px;
     row-gap: 0;
     justify-content: flex-start;
 }
@@ -447,7 +459,7 @@ flex: 0 0 66%;
 /* bestBroadbandKerala */
  .heading{
     color: var(--blue-background-color);
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 
 .bestBroadbandKerala p,
@@ -468,45 +480,49 @@ flex: 0 0 66%;
 
 /* FAQ section */
 .faq_question{
-    border: 0.1px solid rgb(204, 198, 198);
-    border-bottom: none;
-     border-top: 0.1px solid rgb(204, 198, 198);
+    width: 100%;
     padding: 1rem;
-    height: 60.8px;
- 
-}
-/* .faq_question:first-child{
-    border-top: 0.1px solid rgb(204, 198, 198);
-} */
-
-.faq_question p{
-    font-size: 1.2485rem;
-    font-weight: 500;
-    color: var(--blue-background-color);
-    margin: 0; /* removed default margin thats why p tag isnt comming center */
-}
-.faq_question .toggle_btn{
-    font-size: 0.8rem;
-    font-weight: 900;
-    color: var(--blue-background-color);
+    background: none;
+    border: 0.01px solid rgb(223, 218, 218);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     cursor: pointer;
+    outline: none;
+}
+.faq_question:hover{
+    background-color: #e6e6e6;
+}
+.faq_question span{
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+    text-align: left;
 }
 
 .faq_answer{
-    padding: 1rem;
-    border: 0.1px solid rgb(204, 198, 198);
-     /* height: 121.11px; */
-     /* display: none; */
-    /* height: 0;
-      overflow: hidden;
-      transition: .5s height;
-      visibility: hidden; */
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.35s ease-in-out;
 }
-.long_answer {
-    height: 151.35px;
+.faq_answer p{
+padding: 1rem;
+margin: 0;
+border: 0.01px solid rgb(223, 218, 218);
 }
-.short_answer{
-     height: 60.8px;
+
+.faq_toggle_btn{
+    color: var(--blue-background-color);
+   font-size: medium;
+   transition: 0.35s ease-in-out;
+}
+
+.faq-item.open .faq_answer{
+    max-height: 500px;
+}
+
+.faq-item.open .faq_toggle_btn::before{
+   content: "\f068";
 }
 
 
@@ -590,7 +606,7 @@ padding-right: 9.6rem;
 }
 
 /* media query */
-@media screen and (max-width:1200px){
+@media screen and (max-width:1212px){
     header{
     padding-left: 1rem;
     padding-right: 2.4rem;
@@ -622,6 +638,7 @@ padding-right: 9.6rem;
     .helpline_wrapper{
         justify-content: center;
     }
+
 
 
 }
@@ -802,7 +819,9 @@ header{
         width: 100%;
     }
 
-    
+    .heading{
+        font-size: 1.5rem;
+    }
 
 
     /* footer and copyright */

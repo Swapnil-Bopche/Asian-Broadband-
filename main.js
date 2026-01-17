@@ -63,57 +63,17 @@ window.addEventListener('scroll', () => {
     }
 })
 
+const questionBtn = document.querySelectorAll('.faq_question');
+const Faq_dropdown_container = document.querySelectorAll('.faq-item')
 
+questionBtn.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        const item_ = btn.parentElement;
+        console.log(item_);
 
-// About Us
-
-// Why Asianet Broadband
-
-// Business
-
-// Enterprise Solutions
-// Internet Leased Line – Lite
-// Web Hosting
-
-// Others
-
-// Parental Control
-// Blog
-// Cyber Swachhta Awareness
-// Sanchar Saathi Mobile app
-
-// Broadband Plans
-
-// Unlimited Offers
-// Offers
-// Other Services
-// Digital TV
-
-// Contact
-
-// Get Connection
-// Customer Care
-// Customer Feedback Form
-// Go Green
-// Nodal Officers
-// Appellate
-// Modemamc
-
-// Links
-
-// Pay Online
-// Get Connection
-// Customer Support
-// Downloads
-// Partner With Us
-// What is My IP Address
-// Strong Password Generator
-// Internet Data Usage Calculator
-
-// Toll free Number
-
-// 1800 425 4725
-// Monday – Saturday
-// 9.30 – 17.30 hrs
-
-// Connect with us
+        Faq_dropdown_container.forEach((dropdown) => {
+            if (dropdown !== item_) dropdown.classList.remove('open')
+        })
+        item_.classList.toggle('open')
+    })
+})

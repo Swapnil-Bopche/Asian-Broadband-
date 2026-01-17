@@ -321,7 +321,7 @@ flex: 0 0 66%;
 .helpline_wrapper{
     display: flex;
     flex-wrap: wrap;
-    column-gap: 11px;
+    column-gap: 12.5px;
     row-gap: 0;
     justify-content: flex-start;
 }
